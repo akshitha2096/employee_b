@@ -1,3 +1,13 @@
+# Maven build output
 target/
+
+# Git and IDE files
+.git/
 .idea/
 *.iml
+.vscode/
+
+# Local secrets and configuration
+.env
+.env.*
+src/main/resources/application.properties
