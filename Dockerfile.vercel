@@ -19,4 +19,4 @@ COPY --from=build /app/target/ems-backend.jar app.jar
 # Vercel HTTP port
 EXPOSE 80
 
-ENTRYPOINT ["sh", "-c", "exec java -jar app.jar --server.port=${PORT:-80}"]
+ENTRYPOINT ["sh", "-c", "java -jar app.jar --server.port=${PORT} --server.address=0.0.0.0"]
